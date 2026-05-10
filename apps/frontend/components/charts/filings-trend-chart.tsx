@@ -4,7 +4,7 @@ import { Area, AreaChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YA
 
 type Point = {
   filing_year: number;
-  filings: number;
+  filings?: number;
   certified?: number;
   total_filings?: number;
   certified_filings?: number;

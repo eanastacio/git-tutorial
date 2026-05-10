@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: visasponsor-api
+    runtime: docker
+    rootDir: apps/backend
+    dockerfilePath: Dockerfile
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+      - key: SYNC_DATABASE_URL
+        sync: false
+      - key: REDIS_URL
+        sync: false
+      - key: CLERK_JWKS_URL
+        sync: false
+      - key: CLERK_ISSUER
+        sync: false
+      - key: ADMIN_INGESTION_TOKEN
+        sync: false
